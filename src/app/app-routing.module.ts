@@ -9,7 +9,7 @@ import { ListPage3Component } from './page-list/list-page3/list-page3.component'
 const routes: Routes = [
   {path:'', component: TableComponent},
 
-  {path: 'page-list', component: PageListComponent,
+  {path: 'page-list/:id', component: PageListComponent,
     
     children:[{path:'list-page1', component:ListPage1Component},
               {path:'list-page2', component:ListPage2Component},

@@ -9,15 +9,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Test1</td>
-          <td><button class="btn btn-success" routerLink="/page-list" routerLinkActive="active">Link1</button></td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Test2</td>
-          <td><button class="btn btn-success" routerLink="/page-list" routerLinkActive="active">Link2</button></td>
+        <tr *ngFor="let list of tableList ">
+
+          <td>{{list.sl}}</td>
+          <td>{{list.name}}</td>
+          <td>
+            <button class="btn btn-success" routerLink="['page-list/', list.SL, 'list-page1']">Link</button>
+          </td>
         </tr>
       </tbody>
     </table>
