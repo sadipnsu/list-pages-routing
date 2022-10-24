@@ -14,7 +14,7 @@
           <td>{{list.sl}}</td>
           <td>{{list.name}}</td>
           <td>
-            <button class="btn btn-success" routerLink="['page-list/', list.SL, 'list-page1']">Link</button>
+            <button class="btn btn-success" [routerLink]="['page-list/', list.sl, 'list-page1']">Link{{list.sl}}</button>
           </td>
         </tr>
       </tbody>

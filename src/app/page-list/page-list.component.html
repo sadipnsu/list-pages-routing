@@ -1,22 +1,14 @@
 
-<h2 class="mt-5 mx-4 text-secondary">Page Details: </h2>
+ <div class="container border pt-5 pb-5 mt-5">
+  <h2 style="text-align: center;">Name: {{pageName}}</h2>
+    <div class="mainContainer d-flex justify-content-between p-5">
+        <div class="d-flex flex-column btncontainer-fluid">
+            <button class="btn btn-primary" routerLink="list-page1">Page Details 1</button>
+            <button class="btn btn-primary" routerLink="list-page2">Page Details 2</button>
+            <button class="btn btn-primary" routerLink="list-page3">Page Details 3</button>
+            <button class="btn btn-success" (click)="pageBack()">Back Home</button>
 
-<div class="container mt-5 pt-5 pb-5 border border-5" style="display: flex" >  
- 
-  <div>
-      <div style="display: block;">
-        <button type="button"  class="btn btn-primary" routerLink="list-page1" routerLinkActive="active">List-Page 1</button>&nbsp;<br>
-        <button type="button" class="btn btn-secondary" routerLink="list-page2" routerLinkActive="active">List-Page 2</button>&nbsp;<br>
-        <button type="button" class="btn btn-success" routerLink="list-page3" routerLinkActive="active">List-Page 3</button><br>
-      </div>
-      <div>
-        
-      </div>
-  </div>
-    
-    <div>
-      <router-outlet></router-outlet>
+        </div>
+        <router-outlet></router-outlet>
     </div>
- </div>
-
-
+</div>
